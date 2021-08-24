@@ -1,0 +1,365 @@
+:root {
+  /* -- Transition -- */
+  --transition: all 0.5s;
+
+  /* -- Fonts Styling --*/
+  --line-height: calc(17px + 0.3vmax);
+  --titlesFont: 'Righteous', cursive;
+  --textsFont: 'Roboto', sans-serif;
+  /* -- Texts/ReadMoreBtn FontSize -- */
+  --fontSize1: calc(12px + 0.25vmax);
+  /* -- Headings/ShowMoreBtn/Links/NavBarIcons/Logo/BackBtn/NavBarBtn FontSize -- */
+  --fontSize2: calc(13px + 0.5vmax);
+  /* -- Title -- */
+  --fontSize3: calc(20px + 1vmax);
+
+  /* -- Colors -- */
+  --color1: rgb(0, 174, 255);
+  --color2: rgb(0, 120, 255);
+  --favBtnCol: rgb(230, 0, 0);
+
+  /* -- BorderRadius -- */
+  --radius: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+.loadingPage {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 1vmax;
+}
+
+.loadingMsg {
+  margin: 0;
+  font-weight: 500;
+}
+
+.loadingPage p {
+  font-size: var(--fontSize2);
+  font-family: var(--textsFont);
+  font-weight: 500;
+}
+
+header { 
+  height: 6vmax;
+  width: 100%;
+  padding: 0 1vmax;
+  background: linear-gradient(to right, white, 60%, var(--color1));
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-container {
+  font-size: var(--fontSize2);
+  display: flex;
+  align-items: center;
+}
+
+.logo-container span {
+  font-family: var(--titlesFont);
+}
+
+.nav-bar-btn {
+  font-size: var(--fontSize2);
+  z-index: 1;
+  cursor: pointer;
+}
+
+.nav-bar {
+  width: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color:var(--color1);
+  transition: var(--transition);
+  overflow: hidden;
+}
+
+/* -- NavBar Transition -- */
+.smooth {
+  width: 45%;
+  padding: 5vmax 0 5vmax 1.5vmax;
+  border-radius: 0 0 var(--radius) var(--radius);
+}
+
+ul {
+  width: 50vw;
+  list-style: none;
+}
+
+ul li {
+  width: fit-content;
+  cursor: pointer;
+}
+
+ul li:hover {
+  padding: 0 1%;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.377);
+  transition: all 0.2s;
+}
+
+.nav-bar-icon {
+  color: white;
+  margin-bottom: -1px;
+}
+
+.home-icon {
+  font-size: calc(var(--fontSize2) - 1px);
+}
+
+.favorites-icon {
+  font-size: var(--fontSize2);
+  margin-bottom: -2px;
+}
+
+.links {
+  font-size: var(--fontSize2);
+  font-family: var(--titlesFont);
+  color: white;
+  text-decoration: none;
+}
+
+.home-wrapper, .favorites-wrapper {
+  width: 100%;
+  padding: 9vmax 1.5vmax 2vmax;
+}
+
+.back-btn {
+  font-size: var(--fontSize2);
+  color: black;
+  float: left;
+}
+
+.back-btn:hover {
+  transform: scale(1.1);
+  padding: 2px;
+  border-radius: 50%;
+  background-color: rgb(0, 174, 255, 0.2);
+  transition: background-color 0.5s;
+}
+
+h1 {
+  font-size: var(--fontSize3);
+  font-family: var(--titlesFont);
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.intro {
+  font-size: var(--fontSize2);
+  font-family: var(--textsFont);
+  font-weight: 500;
+  margin: 0.5vmax auto 0 auto;
+  text-align: center;
+  display: none;
+}
+
+.home-section, .favorites-section {
+  margin-top: 5vmax;
+}
+
+.favorites-section {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(2, 45%);
+  justify-content: center;
+  align-items: center;
+  gap: 2vmax;
+}
+
+/* -- Sports Containers In Home Section -- */
+.sports {
+  height: 100%;
+  width: 100%;
+  margin-bottom: 1.5vmax;
+  padding: 1.5vmax;
+  border-radius: var(--radius);
+  box-shadow: 0px 0px 5px var(--color2);
+  background-color: rgb(0, 174, 255, 0.05);
+}
+
+/* -- Sports Containers In Favorites Section -- */
+.favorites {
+  flex: 40% 0 1;
+  text-align: center;
+}
+
+.icons {
+  width: 50%;
+  margin: 0 25%;
+}
+
+.sport-desc {
+  font-size: var(--fontSize1);
+  font-family: var(--textsFont);
+  font-weight: 400;
+  line-height: var(--line-height);
+  margin-top: 1vmax;
+}
+
+.read-more {
+  font-size: var(--fontSize1);
+  font-family: var(--textsFont);
+  font-weight: 500;
+  border: none;
+  background-color: transparent;
+  color: var(--color2);
+  cursor: pointer;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
+.images {
+  width: 100%;
+}
+
+.heart {
+  font-size: 120%;
+  stroke-width: 50px;
+  margin-left: 2%;
+  margin-bottom: -2px;
+  fill: transparent;
+  stroke: var(--favBtnCol);
+  cursor: pointer;
+}
+
+/* -- Heart Icon Styling -- */
+.full {
+  fill: var(--favBtnCol);
+}
+
+h3 {
+  font-size: var(--fontSize2);
+  font-family: var(--textsFont);
+  display: inline-block;
+}
+
+.show-more {
+  width: 50%;
+  font-size: var(--fontSize2);
+  font-family: var(--textsFont);
+  margin: 0.5vmax 25% 0;
+  padding: 1% 0;
+  border-color: transparent;
+  border-radius: var(--radius);
+  color: white;
+  background-color: rgb(0, 174, 255);
+  cursor: pointer;
+}
+
+/* -- Media Queries -- */
+
+@media screen and (min-width: 600px) {
+  .home-wrapper, .favorites-wrapper {
+    padding: 9vmax 2.5vmax 2vmax;
+  }
+
+  h1 {
+    margin-bottom: 0;
+  }
+
+  .visible {
+    display: block;
+  }
+
+  .smooth {
+    width: 30%;
+    padding: 3vmax 0 3vmax 1.5vmax;
+  }
+
+  .home-section {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(2, 45%);
+    justify-content: center;
+    align-items: center;
+    gap: 2vmax;
+  }
+
+  .sports {
+    padding: 1.5vmax;
+    margin: 0;
+  }
+
+  .show-more {
+    width: 34%;
+    margin: 2vmax 33% 0;
+  }
+
+  .favorites-section {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(3, 30%);
+    justify-content: center;
+    align-items: center;
+    row-gap: 4vmax;
+    column-gap: 2vmax;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  header svg:not(.logo) {
+    display: none;
+  }
+
+  .nav-btn-badge {
+    display: none !important;
+    
+  }
+
+  .nav-bar {
+    width: auto;
+    position: relative;
+    background-color: inherit;
+    overflow: visible;
+  }
+
+  ul {
+    width: auto;
+    padding: 0 1vmax;
+    display: flex;
+    column-gap: 2vmax;
+  }
+
+  ul li:hover {
+    margin: 0 -1%;
+  }
+
+  .home-section {
+    grid-template-columns: repeat(4, 22%);
+  }
+
+  .sports {
+    padding: 1.5vmax;
+    margin: 0;
+  }
+
+  .show-more {
+    width: 16%;
+    margin: 2vmax 42% 0;
+  }
+
+  .favorites-section {
+    grid-template-columns: repeat(4, 22%);
+    column-gap: 0;
+  }
+}
