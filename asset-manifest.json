@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/sporthub/static/css/main.79bea251.chunk.css",
-    "main.js": "/sporthub/static/js/main.2ade1535.chunk.js",
-    "main.js.map": "/sporthub/static/js/main.2ade1535.chunk.js.map",
-    "runtime-main.js": "/sporthub/static/js/runtime-main.0eab5253.js",
-    "runtime-main.js.map": "/sporthub/static/js/runtime-main.0eab5253.js.map",
-    "static/js/2.1f2a27e3.chunk.js": "/sporthub/static/js/2.1f2a27e3.chunk.js",
-    "static/js/2.1f2a27e3.chunk.js.map": "/sporthub/static/js/2.1f2a27e3.chunk.js.map",
-    "static/js/3.998b1054.chunk.js": "/sporthub/static/js/3.998b1054.chunk.js",
-    "static/js/3.998b1054.chunk.js.map": "/sporthub/static/js/3.998b1054.chunk.js.map",
-    "index.html": "/sporthub/index.html",
-    "static/css/main.79bea251.chunk.css.map": "/sporthub/static/css/main.79bea251.chunk.css.map",
-    "static/js/2.1f2a27e3.chunk.js.LICENSE.txt": "/sporthub/static/js/2.1f2a27e3.chunk.js.LICENSE.txt"
+    "main.css": "/sporthub/frontend/static/css/main.79bea251.chunk.css",
+    "main.js": "/sporthub/frontend/static/js/main.2ade1535.chunk.js",
+    "main.js.map": "/sporthub/frontend/static/js/main.2ade1535.chunk.js.map",
+    "runtime-main.js": "/sporthub/frontend/static/js/runtime-main.fad972f9.js",
+    "runtime-main.js.map": "/sporthub/frontend/static/js/runtime-main.fad972f9.js.map",
+    "static/js/2.1f2a27e3.chunk.js": "/sporthub/frontend/static/js/2.1f2a27e3.chunk.js",
+    "static/js/2.1f2a27e3.chunk.js.map": "/sporthub/frontend/static/js/2.1f2a27e3.chunk.js.map",
+    "static/js/3.998b1054.chunk.js": "/sporthub/frontend/static/js/3.998b1054.chunk.js",
+    "static/js/3.998b1054.chunk.js.map": "/sporthub/frontend/static/js/3.998b1054.chunk.js.map",
+    "index.html": "/sporthub/frontend/index.html",
+    "static/css/main.79bea251.chunk.css.map": "/sporthub/frontend/static/css/main.79bea251.chunk.css.map",
+    "static/js/2.1f2a27e3.chunk.js.LICENSE.txt": "/sporthub/frontend/static/js/2.1f2a27e3.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.0eab5253.js",
+    "static/js/runtime-main.fad972f9.js",
     "static/js/2.1f2a27e3.chunk.js",
     "static/css/main.79bea251.chunk.css",
     "static/js/main.2ade1535.chunk.js"
