@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/sporthub/static/css/main.79bea251.chunk.css",
-    "main.js": "/sporthub/static/js/main.2ade1535.chunk.js",
-    "main.js.map": "/sporthub/static/js/main.2ade1535.chunk.js.map",
+    "main.js": "/sporthub/static/js/main.edc21171.chunk.js",
+    "main.js.map": "/sporthub/static/js/main.edc21171.chunk.js.map",
     "runtime-main.js": "/sporthub/static/js/runtime-main.0eab5253.js",
     "runtime-main.js.map": "/sporthub/static/js/runtime-main.0eab5253.js.map",
     "static/js/2.1f2a27e3.chunk.js": "/sporthub/static/js/2.1f2a27e3.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.0eab5253.js",
     "static/js/2.1f2a27e3.chunk.js",
     "static/css/main.79bea251.chunk.css",
-    "static/js/main.2ade1535.chunk.js"
+    "static/js/main.edc21171.chunk.js"
   ]
 }
