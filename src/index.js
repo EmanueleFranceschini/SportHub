@@ -1,15 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Context from './components/Context'
+import ContextAPI from './components/Context'
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Context>
+    <ContextAPI>
       <App />
-    </Context>
+    </ContextAPI>
   </React.StrictMode>,
   document.getElementById('root')
 );

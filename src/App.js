@@ -8,7 +8,7 @@ import CircularProgress from '@material-ui/core/CircularProgress'
 function App() {
   const { loading } = useMyContext()
 
-    return (
+  return (
     <BrowserRouter basename='/sporthub'>
       <Route path='/' exact render={() =>
         loading === true ? (

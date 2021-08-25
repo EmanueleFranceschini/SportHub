@@ -6,7 +6,7 @@ import Badge from '@material-ui/core/Badge'
 const NavBar = () => {
   const { hideNav, showBadge, menu } = useMyContext()
   return (
-    <div className={menu ? 'nav-bar smooth' : 'nav-bar'}>
+    <nav className={menu ? 'nav-bar smooth' : 'nav-bar'}>
       <ul>
         <li onClick={hideNav}>
           <IoHome className='nav-bar-icon home-icon'/> 
@@ -18,7 +18,7 @@ const NavBar = () => {
           </Badge> : <Link className='links' to='/favorites'>Favorites</Link>}
         </li>
       </ul>
-    </div>
+    </nav>
   )
 }
 
