@@ -35,6 +35,8 @@ html, body {
 
 .loadingPage {
   height: 100vh;
+  padding: 0 1.5vmax;
+  background: linear-gradient(white, 60%, var(--color1));
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -51,6 +53,16 @@ html, body {
   font-size: var(--fontSize2);
   font-family: var(--textsFont);
   font-weight: 500;
+}
+
+.loadingCause {
+  text-align: center;
+}
+
+.loadingCause p:nth-of-type(1) {
+  margin-bottom: 1vmax;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 header { 

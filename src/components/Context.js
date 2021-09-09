@@ -6,19 +6,18 @@ const Context = React.createContext();
 const ContextAPI = ({ children }) => {
   const [sports, setSports] = useState([])
   const [menu, toggleMenu] = useState(false)
-  const [loading, loadingStatus] = useState('wait')
+  const [loading, loadingStatus] = useState(true)
   const [moreContent, setMoreContent] = useState(10)
 
   // -- Pulling Data From Backend & Delaying Loading Page Display When App First Loads --
   useEffect(() => {
     getSports()
-    setTimeout(() => { if (loading !== 'wait')  loadingStatus(true)}, 1000)
     // eslint-disable-next-line
   }, [])
 
   const getSports = async () => {
     try {
-      const res = await fetch('https://sport-hub-backend.herokuapp.com/sports', {method: 'GET'})
+      const res = await fetch('https://sport-hub-backend.herokudapp.com/sports', {method: 'GET'})
       const data = await res.json()
       setSports(data.map(el => { return { ...el, readMore: false }}))
       loadingStatus(false)
